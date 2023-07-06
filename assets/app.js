@@ -1,7 +1,6 @@
-const form = getElementById('form-login');
-const msg = getElementById('msg');
+document.getElementById("form-login").addEventListener("submit", function (e) {
+  e.preventDefault();
+  var nombre = document.getElementById("name").value;
 
-form.addEventListener('submit', function(e){
-    e.preventDefault();
-
-})
+  alert(`${nombre}, Hemos enviado el formulario correctamente`);
+});
